@@ -11,12 +11,9 @@ public class Main {
         factory.addObserver(fiveEggsObserver);
 
         factory.startDecorating();
-        factory.decorateEgg();
-        factory.decorateEgg();
-        factory.decorateEgg();
-        factory.decorateEgg();
-        factory.decorateEgg();
-        factory.decorateEgg();
+        for (int i = 0; i < 6; i++) {
+            factory.decorateEgg();
+        }
 
         factory.removeObserver(goodEggObserver);
         factory.removeObserver(decoratedEggsObserver);
